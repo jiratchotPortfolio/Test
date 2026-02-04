@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SitSense - เบาะรองนั่งเพื่อสุขภาพ Ergonomic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="announcement-bar">
+        ส่งฟรีทั่วไทย! เมื่อสั่งซื้อภายในวันนี้ 🚚
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">SITSENSE.</a>
+            <div class="nav-right">
+                <a href="#product" class="nav-link">สินค้า</a>
+                <a href="#reviews" class="nav-link">รีวิว</a>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge">Best Seller 2024</span>
+                <h1>เปลี่ยนการนั่ง<br>ให้เป็นความผ่อนคลาย</h1>
+                <p>เบาะรองนั่ง Ergonomic ที่ออกแบบมาเพื่อรองรับสรีระ ลดอาการปวดหลังและออฟฟิศซินโดรม นั่งนานแค่ไหนก็ไม่เมื่อย</p>
+                
+                <div class="price-box">
+                    <span class="old-price">฿2,590</span>
+                    <span class="new-price">฿1,290</span>
+                </div>
+
+                <button class="btn btn-primary btn-large" onclick="addToCart()">
+                    สั่งซื้อเลย (ลด 50%)
+                </button>
+                <p class="guarantee"><i class="fas fa-check-circle"></i> รับประกันความพึงพอใจ 30 วัน</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1580480055273-228ff5388ef8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Sitsense Cushion">
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">ทำไมต้อง Sitsense?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="icon-box"><i class="fas fa-chair"></i></div>
+                    <h3>รองรับสรีระ</h3>
+                    <p>ออกแบบตามหลักสรีรศาสตร์ ช่วยจัดกระดูกสันหลังให้อยู่ในท่าที่ถูกต้อง</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-box"><i class="fas fa-wind"></i></div>
+                    <h3>ระบายอากาศ</h3>
+                    <p>วัสดุเมมโมรี่โฟมพร้อมเจลเย็น ระบายความร้อน ไม่อับชื้นตลอดวัน</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-box"><i class="fas fa-feather-alt"></i></div>
+                    <h3>นุ่มคืนตัว</h3>
+                    <p>Premium Memory Foam แท้ 100% ไม่ยุบตัวแม้ใช้งานนานหลายปี</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="product" class="product-detail section">
+        <div class="container detail-grid">
+            <div class="detail-image">
+                 <img src="https://images.unsplash.com/photo-1519326844852-704caea5679e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Material Zoom">
+            </div>
+            <div class="detail-text">
+                <h2>เทคโนโลยี Zero-Gravity</h2>
+                <p>สัมผัสประสบการณ์ความนุ่มสบายเหมือนไร้น้ำหนัก ด้วยโครงสร้างรังผึ้งที่กระจายแรงกดทับ ช่วยให้เลือดไหลเวียนได้ดีขึ้น ลดอาการเหน็บชา</p>
+                <ul class="check-list">
+                    <li><i class="fas fa-check"></i> ปลอกถอดซักได้</li>
+                    <li><i class="fas fa-check"></i> พื้นด้านล่างกันลื่น (Non-slip)</li>
+                    <li><i class="fas fa-check"></i> ใช้ได้ทั้งเก้าอี้ทำงานและเบาะรถยนต์</li>
+                </ul>
+                <button class="btn btn-secondary" onclick="addToCart()">เพิ่มลงตะกร้า - ฿1,290</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews section bg-light">
+        <div class="container">
+            <h2 class="section-title">เสียงจากผู้ใช้งานจริง</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"นั่งทำงานวันละ 8-10 ชม. ปวดหลังมาก พอใช้ตัวนี้คือจบเลย อาการดีขึ้นเยอะ"</p>
+                    <div class="reviewer">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                        <span>คุณพลอย, Graphic Designer</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"ส่งไวมาก แพ็คมาดี เบาะนุ่มแต่ไม่ยวบ คุ้มราคามากครับ"</p>
+                    <div class="reviewer">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                        <span>คุณนนท์, Programmer</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"ซื้อให้คุณพ่อใช้ ท่านชอบมาก บอกว่านั่งดูทีวีสบายขึ้นเยอะ"</p>
+                    <div class="reviewer">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User">
+                        <span>คุณเมย์, เจ้าของธุรกิจ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>SITSENSE.</h3>
+                <p>ยกระดับคุณภาพชีวิต ด้วยท่านั่งที่ถูกต้อง</p>
+            </div>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-line"></i></a>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Sitsense Thailand. All rights reserved.</p>
+    </footer>
+
+    <div id="toast" class="toast">เพิ่มสินค้าลงตะกร้าแล้ว! 🛒</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
